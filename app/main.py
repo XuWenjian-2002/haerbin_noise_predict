@@ -1,5 +1,4 @@
 # Streamlit主应用
-import os
 
 import chardet
 import streamlit as st
