@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 from utils.formatters import DataFormatter
 from utils.validators import ValidationService
-from utils.config import MODEL_SAVE_DIR, DATA_DIR, STATIC_DIR, APP_CONFIG
+from ..utils.config import MODEL_SAVE_DIR, DATA_DIR, STATIC_DIR, APP_CONFIG
 
 
 # 初始化服务(带缓存)
