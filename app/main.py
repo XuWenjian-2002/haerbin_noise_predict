@@ -8,8 +8,8 @@ from streamlit_folium import folium_static
 import shap
 import matplotlib.pyplot as plt
 
-from app.utils.formatters import DataFormatter
-from app.utils.validators import ValidationService
+from utils.formatters import DataFormatter
+from utils.validators import ValidationService
 from utils.config import MODEL_SAVE_DIR, DATA_DIR, STATIC_DIR, APP_CONFIG
 
 
