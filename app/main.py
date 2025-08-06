@@ -500,3 +500,9 @@ with tab6: # 站点管理
         new_alt = st.number_input("海拔")
         if st.button("添加站点"):
             geo_service.add_site(new_site, new_lat, new_lon, new_alt)
+
+def mian():
+    pass
+
+if __name__ == "__main__"":
+    main()
