@@ -9,8 +9,8 @@ from streamlit_folium import folium_static
 import shap
 import matplotlib.pyplot as plt
 
-from app_utils.formatters import DataFormatter
-from app_utils.validators import ValidationService
+from utils.formatters import DataFormatter
+from utils.validators import ValidationService
 from utils.config import MODEL_SAVE_DIR, DATA_DIR, STATIC_DIR, APP_CONFIG
 
 sys.path.insert(0,str(BASE_DIR))
