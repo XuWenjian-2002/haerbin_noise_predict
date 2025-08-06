@@ -1,4 +1,5 @@
 # Streamlit主应用
+import sys
 
 import chardet
 import streamlit as st
@@ -8,9 +9,11 @@ from streamlit_folium import folium_static
 import shap
 import matplotlib.pyplot as plt
 
-from utils.formatters import DataFormatter
-from utils.validators import ValidationService
+from app_utils.formatters import DataFormatter
+from app_utils.validators import ValidationService
 from utils.config import MODEL_SAVE_DIR, DATA_DIR, STATIC_DIR, APP_CONFIG
+
+sys.path.insert(0,str(BASE_DIR))
 
 
 # 初始化服务(带缓存)
@@ -501,8 +504,3 @@ with tab6: # 站点管理
         if st.button("添加站点"):
             geo_service.add_site(new_site, new_lat, new_lon, new_alt)
 
-def mian():
-    pass
-
-if __name__ == "__main__"":
-    main()
