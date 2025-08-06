@@ -14,7 +14,7 @@ def main():
     
     # 启动Streamlit应用
     subprocess.run(
-        ["streamlit", "run", str(main_script), "--server.port", "8501", "--server.address", "0.0.0.0"],
+        ["streamlit", "run", str(main_script)],
         check=True,
         cwd=BASE_DIR  # 确保工作目录为项目根目录
     )
